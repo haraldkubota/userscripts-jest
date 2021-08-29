@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>Counting</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div>This is some text.</div>
+  <div id="theNumber"></div>
+  <div>Some more text</div>
+  <a class="pure-button pure-button-primary" href="#">A Primary Button</a>
+  <button class="pure-button pure-button-primary">A Primary Button</button>
+  <!--script src="./src/logic2.js"></script-->
+  <script type="module">
+    import { addOneFactory } from './src/logic.mjs';
+    let addOne = addOneFactory(10, 'theNumber');
+    setInterval(addOne, 1000);
+  </script>
+
+</body>
+</html>
